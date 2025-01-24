@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepo?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body class="bg-gray-800 text-gray-500">
+    <!-- Header -->
+    <header class="z-10 sticky top-0 bg-gray-950 py-5">
+        <nav class="w-9/12 flex flex-wrap mx-auto">
+          <!-- Logo -->
+          <div class="uppercase text-lg basis-1/2">
+            <a href="index.html">
+              <span class="font-extrabold text-white">Putra</span>
+              <span class="font-extralight text-blue-400">Pratama</span>
+            </a>
+          </div>
+      
+          <!-- Menu untuk Desktop (Visible di layar besar) -->
+          <div class="hidden md:flex basis-1/2 justify-evenly">
+            <a href="index.html"><span>Beranda</span></a>
+            <a href="Putra Profile.html"><span>Tentang Saya</span></a>
+            <a href="#pandangan"><span>Pandangan</span></a>
+            <a href="sosial media.html"><span>Media</span></a>
+          </div>
+      
+          <!-- Menu untuk Mobile -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+      
+          <!-- Menu Links Mobile (Hidden by default) -->
+          <div id="mobile-menu" class="hidden md:hidden w-full mt-2 bg-gray-800 text-white flex flex-col items-center py-2">
+            <a href="index.html" class="py-2">Beranda</a>
+            <a href="Putra Profile.html" class="py-2">Tentang Saya</a>
+            <a href="#pandangan" class="py-2">Pandangan</a>
+            <a href="sosial media.html" class="py-2">Media</a>
+          </div>
+      
+          <!-- Dark Mode Toggle -->
+          <div class="hidden md:flex basis-1/4 justify-end">
+            <span class="hidden dark:inline">
+              <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                  class="fill-sky-400/20"
+                ></path>
+                <path
+                  d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                  class="fill-sky-500"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </nav>
+      </header>
+      
+      <script>
+        // Script untuk toggle menu di mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+      
+
+   <!-- CONTENT -->
+    <main>
+        <div class="bg-gray-700 relative -top-20 pt-20"> <!-- JUDUL KONTEN -->
+            <div class="mx-auto flex flex-col md:flex-row h-screen items-center w-full md:w-9/12">
+                <div class="basis-1/2 px-4"><!-- Descripsi -->
+                    <div class="flex item">
+                        <svg class="stroke-red-500 stroke-2 h-5 w-5">
+                            <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                        </svg>
+                        <h2 class="uppercase text-xs font-extralight tracking-widest tracking-spasi">Namaku Adalah : </h2>
+                    </div>
+                    <h3 class="font-bold text-4xl text-white">
+                        <span>IQBAL</span>
+                        <span class="text-blue-300">SYARIF</span>
+                        <span class="text-black">PRATAMA K</span>
+                    </h3>
+                    <p class="text-yellow-50">
+                        Aku berumur <span>18 Tahun</span> aku membuat website ini cuma gabut aja dan juga kepikiran buat ini web untuk tempat curhat aja. Selagi belum ada someone talk mending cerita disini daripada cerita sama orang lain, mungkin ada beberapa cerita yang tidak bisa kalian akses nantinya karena untuk menjaga privasi ku yakan dan juga sedikit freak wkwk. 
+                    </p>
+                    </div>
+                    
+                    <div class="flex justify-center mt-10">
+                      <div class="basis-1/2">
+                          <!-- Gambar yang diklik untuk memunculkan form password -->
+                          <img src="Gambar/Cancer.png" alt="Klik gambar untuk mengakses" id="image" class="cursor-pointer max-w-xs mx-auto">
+                      </div>
+                  </div>
+                  
+                  <!-- Overlay dan form input password -->
+                  <div id="overlay" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50 hidden">
+                      <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+                          <button onclick="closeOverlay()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                          <h3 class="text-xl font-semibold text-center mb-4">Masukkan Password untuk Melanjutkan</h3>
+                          <input type="password" id="passwordInput" placeholder="Masukkan Password" class="w-full p-3 border border-gray-300 rounded-lg mb-4">
+                          <button onclick="checkPassword()" class="w-full bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition duration-300">
+                              Masuk
+                          </button>
+                          <p id="errorMessage" class="text-red-500 text-center mt-2 hidden">Password Salah! Coba lagi. Jika Masih Salah Hubungi Developernya</p>
+                      </div>
+                  </div>
+                  
+                  <script>
+                    // Password yang benar
+                    const correctPassword = "putra ganteng";
+                
+                    // Ketika gambar diklik
+                    document.getElementById("image").onclick = function() {
+                        // Tampilkan overlay dan form input password
+                        document.getElementById("overlay").classList.remove("hidden");
+                        // Setel ulang pesan error jika sebelumnya ada
+                        document.getElementById("errorMessage").classList.add("hidden");
+                    };
+                
+                    // Fungsi untuk mengecek password
+                    function checkPassword() {
+                        const enteredPassword = document.getElementById("passwordInput").value;
+                        const errorMessage = document.getElementById("errorMessage");
+                
+                        // Cek apakah password yang dimasukkan benar
+                        if (enteredPassword === correctPassword) {
+                            // Jika password benar, arahkan ke halaman berikutnya
+                            window.location.href = "rahasia.html"; // Ganti dengan URL tujuanmu
+                        } else {
+                            // Tampilkan pesan error jika password salah
+                            errorMessage.classList.remove("hidden");
+                
+                            // Reset kolom input password
+                            document.getElementById("passwordInput").value = "";
+                
+
+                        }
+                    }
+                
+                    // Menutup overlay jika klik di luar form
+                    window.onclick = function(event) {
+                        const overlay = document.getElementById("overlay");
+                        const form = overlay.querySelector("div");
+                        if (event.target === overlay) {
+                            closeOverlay();
+                        }
+                    };
+                
+                    // Fungsi untuk menutup overlay
+                    function closeOverlay() {
+                        document.getElementById("overlay").classList.add("hidden");
+                    }
+
+                     // Toggle password visibility
+                    document.getElementById("togglePassword").onclick = function() {
+                        const passwordField = document.getElementById("passwordInput");
+                        const passwordType = passwordField.type === "password" ? "text" : "password";
+                        passwordField.type = passwordType;
+
+                        // Ganti ikon mata sesuai dengan status visibility
+                        this.classList.toggle("fa-eye-slash");
+                    };
+                </script>
+                
+                
+                  
+                </div>
+            </div>
+        </div>
+
+        <!-- SIFAT DAN PANDANGAN -->
+         <div id="pandangan" class="bg-slate-400 py-40"> 
+            <div class="w-9/12 mx-auto">
+                <div class="flex flex-col"> <!-- judul -->
+                        <div class="flex items-center">
+                            <svg class="stroke-black stroke-2 h-5 w-5">
+                             <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                            </svg>
+                            <h2 class="uppercase text-xs font-extralight tracking-spasi">
+                             BEBERAPA
+                            </h2>
+                        </div>
+                        <h3 class="text-3xl text-white">PANDANGAN DAN SIFATKU DI MATA ORANG LAIN</h3>
+                        </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-20">
+                <!-- Card 1 -->
+                    <div class="rounded-lg bg-zinc-300 shadow-lg overflow-hidden hover:bg-blue-400 active:bg-black aspect-w-1 aspect-h-1">
+                    <a href="laki-laki.html">
+                        <img 
+                             class="object-cover opacity-50"
+                            src="Gambar/laki-laki.png" alt="">
+                        <div class="bg-white py-2 px-4">
+                        <h4 class="text-sm font-medium text-gray-800">LAKI_LAKI</h4>
+                        <h5 class="text-sm font-mono">MAHASISWA</h5>
+                    </a>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="rounded-lg bg-white shadow-lg hover:bg-red-600 active:bg-yellow-500 aspect-w-1 aspect-h-1">
+                <a href="perempuan.html">
+                    <img 
+                        class="object-cover opacity-50"
+                        src="Gambar/perempuan.png" alt="">
+                    <div class="bg-white py-2 px-4">
+                        <h4 class="text-sm font-medium text-gray-800">PEREMPUAN</h4>
+                        <h5 class="text-sm font-mono">MAHASISWA</h5>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="sosialmedia" class="bg-cyan-500 py-5">
+        <div class="flex flex-col place-items-center"> <!-- JUDUL -->
+            <div>
+                <div class="flex items-center">
+                    <svg class="stroke-red-500 stroke-2 h-5 w-5">
+                        <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                    </svg>
+                    <h2 class="uppercase text-xs font-extralight tracking-ngangkang text-blue-700">
+                        AKUN
+                    </h2>
+                </div>
+                <h3 class="text-3xl text-purple-700">Sosial Media</h3>
+            </div>
+            <div class="flex flex-wrap mt-5 space-x-3 sm:space-x-0 sm:flex-col sm:items-center">
+                <a class="text-black flex items-center mb-3 sm:mb-2" href="https://www.tiktok.com/@iqbal_yt_?_t=ZS-8tC69RW1z5G&_r=1">
+                    <img class="w-6 h-6 inline" src="Gambar/Tik Tok Logo.png" alt="">
+                    <span class="ml-2">Iqbal_YT_</span>
+                </a>
+                <a class="text-rose-500 flex items-center mb-3 sm:mb-2" href="https://www.instagram.com/putra_pratama_1122?igsh=MXRiendzcW80NzBlNg==">
+                    <img class="w-6 h-6 inline" src="Gambar/Ig Logo.png" alt="">
+                    <span class="ml-2">Putra_Pratama_1122</span>
+                </a>
+                <a class="text-blue-600 flex items-center mb-3 sm:mb-2" href="https://www.facebook.com/share/1DzUFAxM5X/?mibextid=qi2Omg">
+                    <img class="w-6 h-6 inline" src="Gambar/fb.png" alt="">
+                    <span class="ml-2">Iqbal YT</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

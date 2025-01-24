@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putra Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body class="bg-gray-800 text-gray-500">
+    <!-- Header -->
+    <header class="z-10 sticky top-0 bg-gray-950 py-5">
+        <nav class="w-9/12 flex flex-wrap mx-auto">
+          <!-- Logo -->
+          <div class="uppercase text-lg basis-1/2">
+            <a href="index.html">
+              <span class="font-extrabold text-white">Putra</span>
+              <span class="font-extralight text-blue-400">Pratama</span>
+            </a>
+          </div>
+      
+          <!-- Menu untuk Desktop (Visible di layar besar) -->
+          <div class="hidden md:flex basis-1/2 justify-evenly">
+              <a href="index.html"><span>Beranda</span></a>
+            <a href="Putra Profile.html"><span>Tentang Saya</span></a>
+            <a href="#prestasi"><span>Prestasi</span></a>
+            <a href="sosial media.html"><span>Sosial Media</span></a>
+          </div>
+      
+          <!-- Menu untuk Mobile -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+      
+          <!-- Menu Links Mobile (Hidden by default) -->
+          <div id="mobile-menu" class="hidden md:hidden w-full mt-2 bg-gray-800 text-white flex flex-col items-center py-2">
+              <a href="index.html" class="py-2">Beranda</a>
+            <a href="Putra Profile.html" class="py-2">Tentang Saya</a>
+            <a href="#prestasi" class="py-2">Prestasi</a>
+            <a href="sosial media.html" class="py-2">Sosial Media</a>
+          </div>
+      
+          <!-- Dark Mode Toggle -->
+          <div class="hidden md:flex basis-1/4 justify-end">
+            <span class="hidden dark:inline">
+              <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                  class="fill-sky-400/20"
+                ></path>
+                <path
+                  d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                  class="fill-sky-500"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </nav>
+      </header>
+      
+      <script>
+        // Script untuk toggle menu di mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+      
+
+   <!-- CONTENT -->
+    <main>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:grid-cols-5 md:grid-cols-6 gap-10 mt-20">
+            <!-- Card 1 -->
+                <div class="rounded-lg bg-zinc-300 shadow-lg overflow-hidden hover:bg-blue-400 active:bg-black aspect-w-1 aspect-h-1">
+                    <div class="bg-white py-2 px-4">
+                   <a href="https://www.instagram.com/kiky_kaniaarin/profilecard/?igsh=N3ZzZWg4cW9hdzJq"><h4 class="text-sm font-medium text-gray-800">KIKI</h4></a>
+                    <h5 class="text-sm font-mono">MAHASISWI</h5>
+                </div>
+                <img 
+                class="opacity-80"
+                src="Gambar/kiki-pti.jpg" alt="">
+                <p class="text-center text-black">
+                    "klau bolee jujur sebenarnya kmu itu nyeselin bngt cuk kyaa tengil, aneh, julid trs klau lagi kumat tu rada rada gila lebih gila dari orang gila tpi aku suka sm kegigihan kmu dlm belajar jadii mantapp lanjutkan dan untuk suara kmuu nyaa bisa di kecilin dikit ga? telinga ku budeg setiap dnger kmu ngomong"
+                </p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="rounded-lg bg-white shadow-lg overflow-hidden hover:bg-blue-500 active:bg-yellow-500 aspect-w-1 aspect-h-1">
+                <div class="bg-white py-2 px-4">
+                   <a href="https://www.instagram.com/fatimahazzuhraa?igsh=MWltcnB4c2Z5YWFhdA=="><h4 class="text-sm font-medium text-gray-800">AZRA</h4></a>
+                    <h5 class="text-sm font-mono">MAHASISWI</h5>
+                </div>
+                <img 
+                class="object-cover opacity-80"
+                src="Gambar/azra-pti.jpg" alt="">
+                <p class="text-center text-black">
+                    - Sok misterius <br>
+                    - pinter dlm pelajaran tpi goblok dlm hal perempuan <br>
+                    - agak gegabah <br>
+                    - moodnya kek cewk <br>
+                    - kurang disiplin waktu🗿 <br>                   
+                </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="rounded-lg bg-zinc-300 shadow-lg overflow-hidden hover:bg-blue-400 active:bg-black aspect-w-1 aspect-h-1">
+                <div class="bg-white py-2 px-4">
+                   <a href="https://www.instagram.com/cuttyeti_?igsh=bmJyaGZ2ODF4eDB0"><h4 class="text-sm font-medium text-gray-800">YETI</h4></a>
+                    <h5 class="text-sm font-mono">MAHASISWI</h5>
+                </div>
+                <img 
+                class="object-cover opacity-80"
+                src="Gambar/yeti-pti.jpg" alt="">
+                <p class="text-center text-black">
+                    "Putra orangnya baik, moodnya kadang' sulit di tebak, gengsian orangnya, sok cuek😅, ngambekan kdng'🙏🏻 "
+                </p>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="rounded-lg bg-white shadow-lg overflow-hidden hover:bg-blue-500 active:bg-yellow-500 aspect-w-1 aspect-h-1">
+                <div class="bg-white py-2 px-4">
+                    <a href="https://www.instagram.com/dsl.ix?igsh=dHh4OGg4YzNjMjM0"><h4 class="text-sm font-medium text-gray-800">DILLA</h4></a>
+                    <h5 class="text-sm font-mono">MAHASISWI</h5>
+                </div>
+                <img 
+                    class="object-cover opacity-80"
+                    src="Gambar/dilla.jpg" alt="">
+                <p class="text-center text-black">
+                    "Kalo soal sifat, mnurut aku seorang iqbal yg aku kenal di PTI 24 itu punya rasa ingin tahu yang tinggi, suka eksplorasi ide-ide baru, dan nggak takut buat nyampein pendapat, walaupun kadang agak beda dari yang lain tapi itu jadi poin plus bagi aku.
+                    
+                    as i see.. aku lihat kamu orangnya rapi, punya ambisi besar buat selalu unggul dibanding yang lain, bahkan di hari libur pun masih semangat belajar buat maju, aku liatnya kamu punya keinginan buat mimpin unit aja nunjukin kalau kamu mau punya bibit jiwa kepemimpinan.
+                    
+                    tapi jujur bgt nih, kadang cara kamu nyampein pendapat atau pertanyaan kesannya kayak ngajak debat, apalagi kalau pertanyaannya nggak terlalu nyambung / ga relevan sama topik. but.. uniknya, setelah debat atau kelas selesai, kamu selalu balik lagi jadi sosok yang santai, ramah, walaupun ada momen-momen sok coolnya
+                    
+                    uda gitu aja si mnurut aku, smoga projeknya lancar ya weey"
+                </p>
+            </div>
+            <!-- Card 5 -->
+            <div class="rounded-lg bg-zinc-300 shadow-lg overflow-hidden hover:bg-blue-400 active:bg-black aspect-w-1 aspect-h-1">
+                <div class="bg-white py-2 px-4">
+                <a href="https://www.instagram.com/hmrabalqis?igsh=cDB0em1qMHAxdDJw"><h4 class="text-sm font-medium text-gray-800">HUMAIRA</h4></a>
+                    <h5 class="text-sm font-mono">MAHASISWI</h5>
+                </div>
+                <div class="text-center bg-black">
+                    <h1 class="font-bold text-white">KEPO?</h1>
+                    <p class="font-serif text-white">Klik namanya kalo mau tau</p>
+                </div>
+                <p class="text-center text-black">
+                    "koo ituuu nyebelin bangett anjirrr benerannn truss kalo nanya ga ngotak jadi aku sering males gituuu trusss mungkin karna kita beda tempat jadi bicara nya beda jadi aku biasa aja sama cara ko bicara trusss ko orng nya kongsisten ko juga gengsian parah anjirrrr trussss kalo debat ko sering ga mau kalah trusss kalo di bilangin aga susah kaya tipekal keras kepala gituuu trusss yaaa gituuu namanya juga manusia pasti ada plus minus nya tapi  ko tipekal yg ga tinggalin temen giruuuu truss kalo aku tanya apaaa gitu sama ko, ko jawab walau kadang ketus tapi bisa jadi ketus itu karna logat ko jugaaa trusss ko baik banget anjirrr yaaaa walau ga 100% siii kan emng ga ada yg 100% pure nya baik semuaaa tapi ko baik kokk truss aku masi ingat anjirrrr yg kunci motor aku jatuh ko pinjemin uang ko 50 masi ke ingatt tauuuu makasiii bangettt yaaaaaaa. trus yg ko tanya aku sama mauli di mana pas kunci nya hilang walau aku nya kesel liat ko bicara nya gituuu tapi emng gitu gaya koo  trusss yg harus aku tiru dari ko itu kalo janjian pasti ontime bangettt tapi kalo aku suka telat anjirrr yaaaq gituuu siii apa lagii ya lupaaaa intinya dari minus ko bakalan ketutup sma  sikap ko yg positive.begituuuuuu deee ceritanyaaaaaaaaa nanti kalo ada aku tambah.behehehehehebe
+                    makasiii banyak yaaaaaaa "
+                </p>
+            </div>
+            <!-- Card 6 -->
+            <div class="rounded-lg bg-zinc-300 shadow-lg overflow-hidden hover:bg-blue-400 active:bg-black aspect-w-1 aspect-h-1">
+                <div class="bg-white py-2 px-4">
+                <a href="https://www.instagram.com/mauli_ly?igsh=YWExczM1bHphZnB5"><h4 class="text-sm font-medium text-gray-800">MAULI</h4></a>
+                    <h5 class="text-sm font-mono">MAHASISWI</h5>
+                </div>
+                <img 
+                    class="object-cover opacity-80"
+                    src="Gambar/mauli.jpg" alt="">
+                <p class="text-center text-black">
+                    "ambisius"
+                </p>
+            </div>
+        </div>
+        <div id="sosialmedia" class="bg-cyan-500 py-5">
+            <div class="flex flex-col place-items-center"> <!-- JUDUL -->
+                <div>
+                    <div class="flex items-center">
+                        <svg class="stroke-red-500 stroke-2 h-5 w-5">
+                            <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                        </svg>
+                        <h2 class="uppercase text-xs font-extralight tracking-ngangkang text-blue-700">
+                            AKUN
+                        </h2>
+                    </div>
+                    <h3 class="text-3xl text-purple-700">Sosial Media</h3>
+                </div>
+                <div class="flex flex-wrap mt-5 space-x-3 sm:space-x-0 sm:flex-col sm:items-center">
+                    <a class="text-black flex items-center mb-3 sm:mb-2" href="https://www.tiktok.com/@iqbal_yt_?_t=ZS-8tC69RW1z5G&_r=1">
+                        <img class="w-6 h-6 inline" src="Gambar/Tik Tok Logo.png" alt="">
+                        <span class="ml-2">Iqbal_YT_</span>
+                    </a>
+                    <a class="text-rose-500 flex items-center mb-3 sm:mb-2" href="https://www.instagram.com/putra_pratama_1122?igsh=MXRiendzcW80NzBlNg==">
+                        <img class="w-6 h-6 inline" src="Gambar/Ig Logo.png" alt="">
+                        <span class="ml-2">Putra_Pratama_1122</span>
+                    </a>
+                    <a class="text-blue-600 flex items-center mb-3 sm:mb-2" href="https://www.facebook.com/share/1DzUFAxM5X/?mibextid=qi2Omg">
+                        <img class="w-6 h-6 inline" src="Gambar/fb.png" alt="">
+                        <span class="ml-2">Iqbal YT</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
