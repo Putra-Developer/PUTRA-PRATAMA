@@ -198,7 +198,16 @@
     </div>
 </body>
 <script>
-    alert("Hai semuanya Perkenalkan Aku ");
-    alert("ini web percobaan ya");
+    var nama = prompt("Masukkan Nama :");
+console.log("halo "+ nama);
+alert("Selamat Datang "+ nama);
+
+var kepastian =  confirm("Kamu Yakin Nama Kamu "+ nama + "?");
+while(kepastian === false){
+    var nama = prompt("Masukkan Nama : ");
+    alert("Selamat Datang "+ nama);
+
+    kepastian =  confirm("Kamu Yakin Nama Kamu "+ nama + "?");
+}
 </script>
 </html>
