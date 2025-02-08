@@ -21,10 +21,11 @@
       
           <!-- Menu untuk Desktop (Visible di layar besar) -->
           <div class="hidden md:flex basis-1/2 justify-evenly">
-            <a href="index.html"><span>Beranda</span></a>
-            <a href="Putra Profile.html"><span>Tentang Saya</span></a>
-            <a href="#prestasi"><span>Prestasi</span></a>
-            <a href="sosial media.html"><span>Media</span></a>
+              <a href="index.html"><span>Beranda</span></a>
+              <a href="Putra Profile.html"><span>Tentang Saya</span></a>
+              <a href="#prestasi"><span>Prestasi</span></a>
+              <a href="sosial media.html"><span>Media</span></a>
+              <a href="game.html">Game Sederhana</a>
           </div>
       
           <!-- Menu untuk Mobile -->
@@ -35,13 +36,14 @@
               </svg>
             </button>
           </div>
-      
+          
           <!-- Menu Links Mobile (Hidden by default) -->
-          <div id="mobile-menu" class="hidden md:hidden w-full mt-2 bg-gray-800 text-white flex flex-col items-center py-2">
-              <a href="index.html" class="py-2">Beranda</a>
+          <div id="mobile-menu" class=" hidden md:hidden w-full mt-2 bg-gray-800 text-white flex flex-col items-center py-2">
+              <a href="index.html" class="py-2 ">Beranda</a>
             <a href="Putra Profile.html" class="py-2">Tentang Saya</a>
             <a href="#prestasi" class="py-2">Prestasi</a>
             <a href="sosial media.html" class="py-2">Media</a>
+            <a href="game.html">Game Sederhana</a>
           </div>
       
           <!-- Dark Mode Toggle -->
@@ -198,16 +200,12 @@
     </div>
 </body>
 <script>
-    var nama = prompt("Masukkan Nama :");
-console.log("halo "+ nama);
-alert("Selamat Datang "+ nama);
-
-var kepastian =  confirm("Kamu Yakin Nama Kamu "+ nama + "?");
-while(kepastian === false){
-    var nama = prompt("Masukkan Nama : ");
-    alert("Selamat Datang "+ nama);
-
-    kepastian =  confirm("Kamu Yakin Nama Kamu "+ nama + "?");
-}
+    var nama = prompt("Masukkan Nama :")
+    alert("Selamat Datang " + nama);
+    var valid = confirm("Apakah Nama Kamu Sudah Benar?")
+    while(valid == false){
+        var nama = prompt("Masukkan Nama : ")
+        var valid = confirm("Apakah Nama Kamu Sudah Benar?")
+    }
 </script>
 </html>
