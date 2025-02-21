@@ -91,8 +91,8 @@
                         <span>Putra</span>
                         <span class="text-blue-500">Pratama</span>
                     </h3>
-                    <p>
-                        Saya sebenarnya adalah seorang gamers saya sangat suka bermain game mungkin jika kamu ingin tahu lebih lanjut boleh mengetahui saya dengan melihat di tentang saya. Saya sekarang sedang menjalani tahap belajar menjadi <span class="italic text-green-600"> WEB DEVELOPER </span>. Ini adalah website pertama saya, jika tidak sebagus harapan mohon maaf ya. Saya lagi memperdalami <span class="text-red-500"> HTML, CSS, Tailwind CSS, Bootstrap, Java Script, dan Java</span>.
+                    <p class="text">
+                        Saya sebenarnya adalah seorang gamers saya sangat suka bermain game mungkin jika kamu ingin tahu lebih lanjut boleh mengetahui saya dengan melihat di tentang saya. Saya sekarang sedang menjalani tahap belajar menjadi <span class="italic text-cyan-400"> WEB DEVELOPER </span>. Ini adalah website pertama saya, jika tidak sebagus harapan mohon maaf ya. Saya lagi memperdalami <span class="text-red-500"> HTML, CSS, Tailwind CSS, Bootstrap, Java Script, dan Java</span>.
                     </p>
                     <div class="flex flex-row mt-5 space-x-3">
                         <img class="w-6 h-6" src="Gambar/html.webp" alt="HTML">
@@ -200,6 +200,13 @@
     </div>
 </body>
 <script>
+    const latar = document.querySelector('.tes');
+    if (latar) {
+        latar.style.background = 'linear-gradient(#4B6CB7, #182848, #0f1b2d)';
+    }
+    const text = document.querySelector('.text');
+    text.style.color = '#D3D3D3'
+
     var nama = prompt("Masukkan Nama :")
     alert("Selamat Datang " + nama);
     var valid = confirm("Apakah Nama Kamu Sudah Benar?")
